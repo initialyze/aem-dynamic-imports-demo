@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2020-11-05T13:28:10.822+05:30"
+        cq:lastModifiedBy="admin"
+        cq:policy="dynamic-imports-demo/components/structure/page/policy_content_page"
         jcr:primaryType="nt:unstructured"
-        sling:resourceType="wcm/core/components/policies/mappings"
-        cq:policy="dynamic-imports-demo/components/structure/page/policy_content_page">
+        sling:resourceType="wcm/core/components/policies/mappings">
         <root
             cq:policy="wcm/foundation/components/responsivegrid/content-default"
             jcr:primaryType="nt:unstructured"
@@ -24,6 +26,14 @@
                     </components>
                 </dynamic-imports-demo>
             </responsivegrid>
+            <experiencefragment-header
+                cq:policy="dynamic-imports-demo/components/content/experiencefragment/policy_header"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
+            <experiencefragment-footer
+                cq:policy="dynamic-imports-demo/components/content/experiencefragment/policy_footer"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
         </root>
     </jcr:content>
 </jcr:root>

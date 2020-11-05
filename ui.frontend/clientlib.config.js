@@ -42,6 +42,18 @@ module.exports = {
                     {src: "dist/clientlib-site/resources/fonts/*.*", dest: "fonts/"}, 
                 ]
             }
+        },
+        {
+            name: 'clientlib-dynamic-modules',
+            categories: ['dynamic-imports-demo.dynamic-modules'],
+            serializationFormat: "xml",
+            allowProxy: true,
+            dependencies: [],
+            assets: {
+                resources: [
+                    "dist/clientlib-dynamic-modules/resources/*.js"
+                ]
+            },
         }
     ]
 };

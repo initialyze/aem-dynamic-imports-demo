@@ -25,7 +25,9 @@ module.exports = {
             filename: (chunkData) => {
                 return chunkData.chunk.name === 'dependencies' ? 'clientlib-dependencies/[name].js' : 'clientlib-site/[name].js';
             },
-            path: path.resolve(__dirname, 'dist')
+            path: path.resolve(__dirname, 'dist'),
+            chunkFilename: 'clientlib-dynamic-modules/resources/[name].js',
+            publicPath: "/etc.clientlibs/dynamic-imports-demo/clientlibs/",
         },
         module: {
             rules: [

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
     <rep:policy/>
@@ -271,17 +271,23 @@
                 </title>
                 <experiencefragment jcr:primaryType="nt:unstructured">
                     <policy_header
+                        cq:styleDefaultClasses="experiencefragment-header"
+                        jcr:lastModified="{Date}2020-11-05T13:27:54.074+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="AEM Dynamic Imports Demo Experience Fragment - Header"
                         sling:resourceType="wcm/core/components/policy/policy">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </policy_header>
                     <policy_footer
+                        cq:styleDefaultClasses="experiencefragment-footer"
+                        jcr:lastModified="{Date}2020-11-05T13:28:10.814+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="AEM Dynamic Imports Demo Experience Fragment - Footer"
                         sling:resourceType="wcm/core/components/policy/policy">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
-                </policy_footer>
+                    </policy_footer>
                 </experiencefragment>
             </content>
             <structure jcr:primaryType="nt:unstructured">

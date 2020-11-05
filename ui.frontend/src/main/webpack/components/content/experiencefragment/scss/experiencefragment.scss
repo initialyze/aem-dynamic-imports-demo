@@ -1,1 +1,12 @@
+.experiencefragment {
+    &-header {
+        @extend .navbar;
+        background-color: $black;
+        color: $white;
+    }
+    &-footer {
+       @extend .bg-light;
+       text-align: center;
+    }
+}
 .cmp-experiencefragment {}

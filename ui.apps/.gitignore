@@ -2,3 +2,4 @@
 
 src/main/content/jcr_root/apps/dynamic-imports-demo/clientlibs/clientlib-site
 src/main/content/jcr_root/apps/dynamic-imports-demo/clientlibs/clientlib-dependencies
+src/main/content/jcr_root/apps/dynamic-imports-demo/clientlibs/clientlib-dynamic-modules
