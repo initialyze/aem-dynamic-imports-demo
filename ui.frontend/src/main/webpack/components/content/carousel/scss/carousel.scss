@@ -10,5 +10,9 @@
 .cmp-carousel__action--play {}
 .cmp-carousel__action-icon {}
 .cmp-carousel__action-text {}
-.cmp-carousel__indicators {}
+.cmp-carousel__indicators {
+    .mt-20 {
+        margin-top: 20px;
+    }
+}
 .cmp-carousel__indicator {}

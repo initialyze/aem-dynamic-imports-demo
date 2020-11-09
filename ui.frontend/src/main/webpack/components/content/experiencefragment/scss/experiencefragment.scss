@@ -3,6 +3,13 @@
         @extend .navbar;
         background-color: $black;
         color: $white;
+
+        .cmp-navigation__item {
+            display: inline-block;
+            a {
+               color: $white;
+            }
+        }
     }
     &-footer {
        @extend .bg-light;
