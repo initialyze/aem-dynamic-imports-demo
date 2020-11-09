@@ -17,12 +17,12 @@
             ).then(function(Alert){
                 Alert.default('Carousel script tag initiated...');
                 const actionsContainer = carousel.querySelector(selectors.carouselActions);
-                const indicatorContainer = carousel.querySelector(selectors.carouselIndicators);
+                const indicatorsContainer = carousel.querySelector(selectors.carouselIndicators);
                 if(actionsContainer){
                     actionsContainer.style.display = "none";
                 }
-                if(indicatorContainer) {
-                    indicatorContainer.classList.add('mt-20');
+                if(indicatorsContainer) {
+                    indicatorsContainer.classList.add('mt-20');
                 }
             }).catch(function(Error){
                 if(typeof(Error) == String) {
@@ -31,7 +31,7 @@
                     console.log(JSON.stringify('alert error => ', Error));
                 }
 
-            })
+            });
         }
     });
 })();
