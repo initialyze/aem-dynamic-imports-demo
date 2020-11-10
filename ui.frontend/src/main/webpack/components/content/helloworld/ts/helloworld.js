@@ -1,4 +1,10 @@
-let jsHelloWorld = () => {
-    const jsString = "Hello World";
-}
-export default jsHelloWorld();
+const HelloWorldComponent = {
+    jsHelloWorld: () => {
+        const jsString = "Hello World";
+        console.log(`${jsString} component loaded ...`);
+    },
+    init() {
+        this.jsHelloWorld();
+    }
+};
+export default HelloWorldComponent;

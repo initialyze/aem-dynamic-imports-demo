@@ -2,5 +2,9 @@
 import "./main.scss";
 
 // Typescript/Javascript
-import "../components/**/*.js";
-import "../components/**/*.ts";
+
+import DynamicComponents from "./dynamic-components.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+    DynamicComponents.init();
+});
