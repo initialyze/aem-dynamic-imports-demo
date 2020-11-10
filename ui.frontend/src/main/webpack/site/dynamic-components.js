@@ -5,13 +5,12 @@ const DynamicComponents = {
     },
     init: function () {
         const { dynamicComponents } = this;
-        Object.keys(dynamicComponents).forEach(function(component){
-            const componentContext = document.querySelector(`.${component}`);
+        Object.keys(dynamicComponents).forEach(function(dynamicComponent){
+            const componentContext = document.querySelector(`.${dynamicComponent}`);
             if(componentContext) {
-                dynamicComponents[component]
-                .then(
-                    function(importedChunck){
-                    importedChunck.default.init();
+                dynamicComponents[dynamicComponent]
+                .then(function(component){
+                    component.default.init();
                 });
             }
         });
