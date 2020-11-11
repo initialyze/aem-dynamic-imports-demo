@@ -4,6 +4,8 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2020-11-10T14:56:46.493-08:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/dynamic-imports-demo/settings/wcm/templates/content-page-template"
         jcr:primaryType="cq:PageContent"
         jcr:title="en"
@@ -19,6 +21,6 @@
                 sling:resourceType="wcm/foundation/components/responsivegrid"/>
         </root>
     </jcr:content>
-    <home/>
-    <about-us/>
+    <demo-helloworld/>
+    <demo-carousel/>
 </jcr:root>
